@@ -1,4 +1,4 @@
-- Sinh viên: Phạm Tuấn Minh 
+- Tên: Phạm Tuấn Minh 
 - MSSV: 25112081
 - Nhóm: 11
 - Công cụ: PlatformIO (espressif32@6.9.0, board esp32dev, framework Arduino)
@@ -17,8 +17,6 @@ Thử chéo nhóm: đổi MAC sang kit nhóm khác → kết quả <có/không n
 Bài 4
 Đã làm: ESP32 nối Wi-Fi (STA), chạy WebServer cổng 80 với các route /, /on, /off, /toggle; trang hiển thị rõ LED đang BẬT/TẮT. LED nối GPIO2 qua điện trở 220 Ω.
 Quan sát: mở IP của ESP32 trên điện thoại cùng mạng, bấm BẬT/TẮT thì LED đổi trạng thái tương ứng.
-
-Sơ đồ đấu nối: docs/bai4_so_do.svg và docs/bai4.fzz (Fritzing). Ảnh/video: media/bai4/.
 Bài 5
 Đã làm: ESP32 nối Wi-Fi rồi nối broker <test.mosquitto.org hoặc IP Mosquitto trong LAN> cổng 1883; publish số đếm mỗi 2 giây vào bcse/th3/nhom-XX; subscribe bcse/th3/nhom-XX/led (nhận 1 bật LED, 0 tắt LED). Client id lấy từ MAC nên khác nhau giữa các kit; gọi mqtt.loop() liên tục trong loop().
 Quan sát: app MQTT (subscribe bcse/th3/nhom-XX) thấy số đếm tăng dần; publish 1 / 0 vào topic .../led thì LED bật/tắt.
